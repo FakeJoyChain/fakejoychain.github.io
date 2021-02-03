@@ -18,7 +18,7 @@
                 })
 
                 // on function start, set the audio volume to 20%
-                document.querySelector("[autoplay]").volume =0.1;
+                document.querySelector("[autoplay]").volume = 0.1;
             })
         </script>
     </head>
@@ -52,7 +52,7 @@
         <!-- body part -->
         <div class="layui-row" style="text-align: center;">
             <!-- medsia player part -->
-            <audio id="bgmusic" width="128px" height="20px" autoplay="autoplay" loop="loop" style="display: none;" controls>
+            <audio id="bgmusic" width="128px" height="20px"  loop="loop" style="display: none;" controls>
                 <source src="./medias/backgroundmusic.mp3" type="audio/mpeg"/>
             </audio>
             <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-pause"></i>
@@ -83,7 +83,26 @@
         </div>
 
         <div class="layui-row">
-            
+            <div class="layui-card layui-col-lg9 layui-col-md9 layui-col-sm6">
+                <div class="layui-card-body">
+                    kjdsdjlskajdalsk
+                </div>
+            </div>
+
+            <div class="layui-card layui-col-lg3 layui-col-md3 layui-col-sm6">
+                <div class="layui-card-header">相关内容</div>
+                <div id="lst" class="layui-card-body">
+                    <ul>
+                        <li><a href="#">Linux 的起源</a></li>
+                        <li><a href="#">从C到万物</a></li>
+                        <li><a href="#">JAVA为何不会衰弱</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="top">
+            <i class="layui-icon layui-icon-top"></i>
         </div>
 
         <div class="layui-row">

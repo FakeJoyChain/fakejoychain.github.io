@@ -1,7 +1,33 @@
+
+/* set all the text in card body center */
 [class="layui-card-header"]{
     text-align: center;
 }
 
 [class="layui-card-body"]{
     text-align: center;
+}
+
+/* especially, the list just into left */
+#lst{
+    text-align: left !important;
+}
+
+/* the elements in list must be split with some spaces */
+#lst ul li{
+    padding: 10px;
+}
+
+/* give the top icon some styles */
+#top{
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 5px;
+    position: fixed;
+    z-index: 2;
+}
+
+#top i{
+    font-size: 4em;
 }
