@@ -49,18 +49,41 @@
             </ul>
         </div>
         
+        <!-- body part -->
+        <div class="layui-row" style="text-align: center;">
+            <!-- medsia player part -->
+            <audio id="bgmusic" width="128px" height="20px" autoplay="autoplay" loop="loop" style="display: none;" controls>
+                <source src="./medias/backgroundmusic.mp3" type="audio/mpeg"/>
+            </audio>
+            <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-pause"></i>
+        </div>
+
         <div class="layui-row">
-            <!-- body part -->
-            <div class="layui-col-lg2 layui-col-md4 layui-col-sm3">
-                <!-- medsia player part -->
-                <audio id="bgmusic" width="128px" height="20px" autoplay="autoplay" loop="loop" style="display: none;" controls>
-                    <source src="./medias/backgroundmusic.mp3" type="audio/mpeg"/>
-                </audio>
-                <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-pause"></i>
+            <div class="layui-card">
+                <div class="layui-card-body layui-col-lg3 layui-col-md4 layui-col-sm12">
+                    <div class="layui-card-header">气定神闲</div>
+                    <div class="layui-card-body">
+                        每一次尝试都有全新的收获
+                    </div>
+                </div>
+
+                <div class="layui-card-body layui-col-lg6 layui-col-md4 layui-col-sm12">
+                    <div class="layui-card-header">静心思过</div>
+                    <div class="layui-card-body">
+                        每一次收获都是一次全新的体验
+                    </div>
+                </div>
+                <div class="layui-card-body layui-col-lg3 layui-col-md4 layui-col-sm12">
+                    <div class="layui-card-header">神思所往</div>
+                    <div class="layui-card-body">
+                        喜欢和不喜欢只在一念之间
+                    </div>
+                </div>
             </div>
-            <div class="layui-col-lg10 layiu-col-md8 layui-col-sm9">
-                <!-- real content part -->
-            </div>
+        </div>
+
+        <div class="layui-row">
+            
         </div>
 
         <div class="layui-row">
@@ -70,5 +93,6 @@
         </div>
 
         <script src="./js/homePage.js"></script>
+        <link rel="stylesheet" href="./js/css/homePage.css"/>
     </body>
 </html>
