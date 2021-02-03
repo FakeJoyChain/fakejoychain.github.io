@@ -12,14 +12,23 @@
 
         <!-- use layui modules -->
         <script>
-            layui.use('element', function(){
-                var element = layui.element;
+            $(function(){
+                layui.use('element', function(){
+                    var element = layui.element;
+                })
+
+                // on function start, set the audio volume to 20%
+                document.querySelector("[autoplay]").volume =0.2;
             })
         </script>
     </head>
     <body>
-        <div class="layui-header">
+        <div class="layui-row">
+            <!-- header part -->
             <ul class="layui-nav layui-bg-green">
+                <li class="layui-nav-item">
+                    <a href="">首页</a>
+                </li>
                 <li class="layui-nav-item"><a>Linux</a></li>
                 <li class="layui-nav-item"><a>C语言 </a></li>
                 <li class="layui-nav-item"><a>C++</a></li>
@@ -40,8 +49,24 @@
             </ul>
         </div>
         
-        <div>
-            <h3>sadsad</h3>
+        <div class="layui-row">
+            <!-- body part -->
+            <div class="layui-col-lg2 layui-col-md4 layui-col-sm3">
+                <!-- media player part -->
+                <audio width="128px" height="20px" autoplay="autoplay" loop="loop" style="display: none;" controls>
+                    <source src="./medias/backgroundmusic.ogg" type="audio/ogg">
+                    <source src="./medias/backgroundmusic.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+            <div class="layui-col-lg10 layiu-col-md8 layui-col-sm9">
+                <!-- real content part -->
+            </div>
+        </div>
+
+        <div class="layui-row">
+            <div class="layui-footer" style="text-align: center;">
+                <span>联系方式QQ 534645359 / WeChat abc534645359</span>
+            </div>
         </div>
     </body>
 </html>
