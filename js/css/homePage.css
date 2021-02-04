@@ -31,3 +31,7 @@
 #top i{
     font-size: 4em;
 }
+
+#top:hover{
+    cursor: pointer;
+}
