@@ -1,129 +1,132 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>personal blog of fake joy chain's</title>
-        <!-- http://fakejoychain.github.io -->
-        <script src="./css/layui.all.js"></script>
-        <script src="./css/layui.js"></script>
-        <script src="./js/jquery-3.5.1.min.js"></script>
-        <link rel="stylesheet" href="./css/css/layui.css"/>
-        <link rel="stylesheet" href="./css/css/layui.mobile.css"/>
 
-        <!-- use layui modules -->
-        <script>
-            $(function(){
-                layui.use('element', function(){
-                    var element = layui.element;
-                })
+<head>
+    <meta charset="utf-8">
+    <title>personal blog of fake joy chain's</title>
+    <!-- http://fakejoychain.github.io -->
+    <script src="./css/layui.all.js"></script>
+    <script src="./css/layui.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./css/css/layui.css" />
+    <link rel="stylesheet" href="./css/css/layui.mobile.css" />
 
-                // on function start, set the audio volume to 20%
-                document.querySelector("[autoplay]").volume = 0.1;
+    <!-- use layui modules -->
+    <script>
+        $(function () {
+            layui.use('element', function () {
+                var element = layui.element;
             })
-        </script>
-    </head>
-    <body>
-        <div class="layui-row">
-            <!-- header part -->
-            <ul class="layui-nav layui-bg-green">
-                <li class="layui-nav-item">
-                    <a href="">首页</a>
-                </li>
-                <li class="layui-nav-item"><a>Linux</a></li>
-                <li class="layui-nav-item"><a>C语言 </a></li>
-                <li class="layui-nav-item"><a>C++</a></li>
-                <li class="layui-nav-item"><a>JAVA</a></li>
-                <li class="layui-nav-item"><a>C#</a></li>
-                <li class="layui-nav-item"><a>Python</a></li>
-                <li class="layui-nav-item">
-                    <a>高级技术</a>
-                    <dl class="layui-nav-child">
-                        <dd><a>C语言</a></dd>
-                        <dd><a>C++</a></dd>
-                        <dd><a>JAVA</a></dd>
-                        <dd><a>C#</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item"><a>推荐博客</a></li>
-                <li class="layui-nav-item"><a>关于我</a></li>
-            </ul>
-        </div>
-        
-        <!-- body part -->
-        <div class="layui-row" style="text-align: center;">
-            <!-- medsia player part -->
-            <audio id="bgmusic" width="128px" height="20px"  loop="loop" style="display: none;" controls>
-                <source src="./medias/backgroundmusic.mp3" type="audio/mpeg"/>
-            </audio>
-            <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-pause"></i>
-        </div>
 
-        <div class="layui-row">
-            <div class="layui-card">
-                <div class="layui-card-body layui-col-lg3 layui-col-md4 layui-col-sm12">
-                    <div class="layui-card-header">气定神闲</div>
-                    <div class="layui-card-body">
-                        每一次尝试都有全新的收获
-                    </div>
-                </div>
+            // on function start, set the audio volume to 20%
+            document.querySelector("[autoplay]").volume = 0.1;
+        })
+    </script>
+</head>
 
-                <div class="layui-card-body layui-col-lg6 layui-col-md4 layui-col-sm12">
-                    <div class="layui-card-header">静心思过</div>
-                    <div class="layui-card-body">
-                        每一次收获都是一次全新的体验
-                    </div>
-                </div>
-                <div class="layui-card-body layui-col-lg3 layui-col-md4 layui-col-sm12">
-                    <div class="layui-card-header">神思所往</div>
-                    <div class="layui-card-body">
-                        喜欢和不喜欢只在一念之间
-                    </div>
-                </div>
-            </div>
-        </div>
+<body>
+    <div class="layui-row">
+        <!-- header part -->
+        <ul class="layui-nav layui-bg-green">
+            <li class="layui-nav-item">
+                <a href="">首页</a>
+            </li>
+            <li class="layui-nav-item"><a>Linux</a></li>
+            <li class="layui-nav-item"><a>C语言 </a></li>
+            <li class="layui-nav-item"><a>C++</a></li>
+            <li class="layui-nav-item"><a>JAVA</a></li>
+            <li class="layui-nav-item"><a>C#</a></li>
+            <li class="layui-nav-item"><a>Python</a></li>
+            <li class="layui-nav-item">
+                <a>高级技术</a>
+                <dl class="layui-nav-child">
+                    <dd><a>C语言</a></dd>
+                    <dd><a>C++</a></dd>
+                    <dd><a>JAVA</a></dd>
+                    <dd><a>C#</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a>推荐博客</a></li>
+            <li class="layui-nav-item"><a>关于我</a></li>
+        </ul>
+    </div>
 
-        <div class="layui-row">
-            <div class="layui-card layui-col-lg9 layui-col-md9 layui-col-sm6">
+    <!-- body part -->
+    <div class="layui-row" style="text-align: center;">
+        <!-- medsia player part -->
+        <audio id="bgmusic" width="128px" height="20px" loop="loop" style="display: none;" controls>
+            <source src="./medias/backgroundmusic.mp3" type="audio/mpeg" />
+        </audio>
+        <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-pause"></i>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-card">
+            <div class="layui-card-body layui-col-lg3 layui-col-md4 layui-col-sm12">
+                <div class="layui-card-header">气定神闲</div>
                 <div class="layui-card-body">
-                    
+                    每一次尝试都有全新的收获
                 </div>
             </div>
 
-            <div class="layui-card layui-col-lg3 layui-col-md3 layui-col-sm6">
-                <div class="layui-card-header">相关内容</div>
-                <div id="lst" class="layui-card-body">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="layui-icon layui-icon-right"></i>Linux 的起源
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="layui-icon layui-icon-right"></i>从 C 到万物
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="layui-icon layui-icon-right"></i>JAVA 为何不会衰弱
-                            </a>
-                        </li>
-                    </ul>
+            <div class="layui-card-body layui-col-lg6 layui-col-md4 layui-col-sm12">
+                <div class="layui-card-header">静心思过</div>
+                <div class="layui-card-body">
+                    每一次收获都是一次全新的体验
+                </div>
+            </div>
+            <div class="layui-card-body layui-col-lg3 layui-col-md4 layui-col-sm12">
+                <div class="layui-card-header">神思所往</div>
+                <div class="layui-card-body">
+                    喜欢和不喜欢只在一念之间
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="top">
-            <i class="layui-icon layui-icon-top"></i>
-        </div>
+    <div class="layui-row">
+        <div class="layui-card layui-col-lg9 layui-col-md9 layui-col-sm6">
+            <div class="layui-card-body">
 
-        <div class="layui-row">
-            <div class="layui-footer" style="text-align: center;">
-                <span>联系方式QQ 534645359 / WeChat abc534645359</span>
             </div>
         </div>
 
-        <script src="./js/homePage.js"></script>
-        <link rel="stylesheet" href="./js/css/homePage.css"/>
-    </body>
+        <div class="layui-card layui-col-lg3 layui-col-md3 layui-col-sm6">
+            <div class="layui-card-header">相关内容</div>
+            <div id="lst" class="layui-card-body">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="layui-icon layui-icon-right"></i>Linux 的起源
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="layui-icon layui-icon-right"></i>从 C 到万物
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="layui-icon layui-icon-right"></i>JAVA 为何不会衰弱
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="top">
+        <i class="layui-icon layui-icon-top"></i>
+    </div>
+
+    <div class="layui-row">
+        <div class="layui-footer" style="text-align: center;">
+            <span>联系方式QQ 534645359 / WeChat abc534645359</span>
+        </div>
+    </div>
+
+    <script src="./js/homePage.js"></script>
+    <link rel="stylesheet" href="./js/css/homePage.css" />
+</body>
+
 </html>
