@@ -8,6 +8,7 @@
     text-align: center;
 }
 
+
 /* especially, the list just into left */
 #lst{
     text-align: left !important;
@@ -24,6 +25,15 @@
     height: 50px;
     bottom: 30px;
     right: 5px;
+    position: fixed;
+    z-index: 2;
+}
+
+#player{
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    left:5px;
     position: fixed;
     z-index: 2;
 }
