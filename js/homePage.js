@@ -19,6 +19,10 @@ $("#top").on("click", function () {
     window.scrollTo(0, 0);
 })
 
-$("#top").hover(function () {
-    layer.message("heheh");
+$("#top").mouseenter(function () {
+    layer.tips("点击我快速回到顶部", $(this));
+})
+
+$("#player").mouseenter(function () {
+    layer.tips("听听音乐吧", $(this));
 })
