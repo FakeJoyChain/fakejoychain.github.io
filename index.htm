@@ -19,7 +19,7 @@
             })
 
             // on function start, set the audio volume to 20%
-            document.querySelector("[autoplay]").volume = 0.1;
+            document.getElementsByTagName("audio")[0].volume = 0.2;
         })
     </script>
 </head>
@@ -52,12 +52,12 @@
     </div>
 
     <!-- body part -->
-    <div class="layui-row" style="text-align: center;">
+    <div id="player" class="layui-row" style="text-align: center;">
         <!-- medsia player part -->
         <audio id="bgmusic" width="128px" height="20px" loop="loop" style="display: none;" controls>
             <source src="./medias/backgroundmusic.mp3" type="audio/mpeg" />
         </audio>
-        <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-pause"></i>
+        <i id="stop-start" style="font-size: xx-large;" class="layui-icon layui-icon-play"></i>
     </div>
 
     <div class="layui-row">
@@ -85,13 +85,16 @@
     </div>
 
     <div class="layui-row">
-        <div class="layui-card layui-col-lg9 layui-col-md9 layui-col-sm6">
+        <div class="layui-card layui-col-lg9 layui-col-md9 layui-col-sm10">
             <div class="layui-card-body">
-
+                <!-- the main body of this blog -->
+                <div class="layui-card layui-col-md4">card</div>
+                <div class="layui-card layui-col-md4">card 2</div>
+                <div class="layui-card layui-col-md4">card 3</div>
             </div>
         </div>
 
-        <div class="layui-card layui-col-lg3 layui-col-md3 layui-col-sm6">
+        <div class="layui-card layui-col-lg3 layui-col-md3 layui-col-sm2">
             <div class="layui-card-header">相关内容</div>
             <div id="lst" class="layui-card-body">
                 <ul>
@@ -121,7 +124,7 @@
 
     <div class="layui-row">
         <div class="layui-footer" style="text-align: center;">
-            <span>联系方式QQ 534645359 / WeChat abc534645359</span>
+            <span>&#169; 联系方式QQ 534645359 / WeChat abc534645359</span>
         </div>
     </div>
 
